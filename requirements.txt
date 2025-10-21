@@ -1,4 +1,6 @@
 babel==2.17.0
+colorama==0.4.6
+docx2pdf==0.1.8
 docxcompose==1.4.0
 docxtpl==0.20.1
 et_xmlfile==2.0.0
@@ -11,7 +13,9 @@ pandas==2.3.3
 python-dateutil==2.9.0.post0
 python-docx==1.2.0
 pytz==2025.2
+pywin32==311
 setuptools==80.9.0
 six==1.17.0
+tqdm==4.67.1
 typing_extensions==4.15.0
 tzdata==2025.2

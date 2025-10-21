@@ -12,6 +12,6 @@ df.index += 1
 df.index.name = 'ID'
 
 
-df.to_excel("../employees.xlsx", index=True)
+df.to_excel("../employees.xlsx")
 
 print("employees.xlsx has been created successfully!")
