@@ -14,9 +14,11 @@ for index, row in data.iterrows():
         "StartDate": pd.to_datetime(row['StartDate']).strftime('%B %d, %Y') 
     }
     doc.render(context)
+
     docx_file = os.path.join("output", f"Offer_Letter_{row['Name'].replace(' ', '_')}.docx")
     doc.save(docx_file)
     print(f"Generated DOCX: {docx_file}")
+    
     pdf_file = os.path.join("output", f"Offer_Letter_{row['Name'].replace(' ', '_')}.pdf")
     convert(docx_file, pdf_file)
     print(f"Converted to PDF: {pdf_file}")
